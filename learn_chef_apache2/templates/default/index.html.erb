@@ -1,6 +1,10 @@
 <html>
 	<body>
-		<h1>Привет, "<имя>"! </br>
+		<h1>Привет, <%= node['user']['name'] %>! </br>
 		Меня зовут <%= node['fqdn'] %>, мой IP <%= node['ipaddress'] %>	</h1>
+		<pre>
+		<%= node['net']['hostname'] %>
+		<%= node['net']['IP'] %>
+		</pre>
 	</body>
 </html>
