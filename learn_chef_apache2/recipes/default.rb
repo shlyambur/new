@@ -13,6 +13,7 @@ end
 #node.set['apache']['dir'] = '/etc/apache2'
 node.set['net']['hostname'] = 'torba'
 #node['user']['name'] = 'vasya'
+node.set['server']['username'] = 'vasya'
 
 template 'var/www/html/index.html' do
 	source 'index.html.erb'
