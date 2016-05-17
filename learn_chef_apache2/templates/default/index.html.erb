@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head> -->
 	<body>
-		<h1>Привет,</br>
+		<h1>Привет, <%= node['server']['username'] %></br>
 		Меня зовут <%= node['fqdn'] %>, мой IP <%= node['ipaddress'] %>	</h1>
 		<pre>
 		<%= node['net']['hostname'] %>
-		<%= node['server']['username'] %>
+		
 		</pre>
 	</body>
 </html>
