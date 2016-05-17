@@ -12,7 +12,7 @@ end
 
 #node.set['apache']['dir'] = '/etc/apache2'
 node['net']['hostname'] = 'torba'
-node['user']['name'] = 'vasya'
+#node['user']['name'] = 'vasya'
 
 template 'var/www/html/index.html' do
 	source 'index.html.erb'
