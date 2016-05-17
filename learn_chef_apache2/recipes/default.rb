@@ -10,10 +10,9 @@ service 'apache2' do
 	action [:enable, :start]
 end
 
-#node.set['apache']['dir'] = '/etc/apache2'
-node.set['net']['hostname'] = 'torba'
+node.set['net']['hostname'] = ''
 #node['user']['name'] = 'vasya'
-node.set['server']['username'] = 'vasya'
+node.set['server']['username'] = 'user_name'
 
 template 'var/www/html/index.html' do
 	source 'index.html.erb'
